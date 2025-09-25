@@ -1,0 +1,11 @@
+$bgcolor: black;
+$fontcolor: white;
+$primary: #0078D2;
+
+body {
+    background-color: $bgcolor;
+    color: $fontcolor;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
