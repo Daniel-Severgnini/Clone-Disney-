@@ -1,11 +1,56 @@
-$bgcolor: black;
-$fontcolor: white;
-$primary: #0078D2;
+@use 'hero';
 
-body {
-    background-color: $bgcolor;
-    color: $fontcolor;
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+$corDeFundo: #040714;
+$coTextoPrincipal: silver;
+$corTextoSecundario: #f9f9f9;
+
+body {
+    background-color: $corDeFundo;
+}
+
+@mixin text($fontSize: 16px) {
+    font-size: $fontSize;
+    line-height: $fontSize + 10px;
+    color: $coTextoPrincipal;
+}
+
+@mixin title($fontSize: 40px){
+    @include text($fontSize);
+    color: $corTextoSecundario;
+}
+
+.text--big {
+    @include text(18px);
+}
+
+.text {
+    @include text;
+}
+
+.text--small{
+    @include text(12px);
+}
+
+.tittle--big {
+    @include tittle(44px);
+}
+
+.tittle {
+    @include tittle
+}
+
+.tittle--small {
+    @include tittle(28px);
+}
+
+.link-text {
+    @include text(18px);
+    color: $corTextoSecundario;
+    text-decoration: underline;
 }
