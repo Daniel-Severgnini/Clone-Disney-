@@ -7,7 +7,7 @@
     }
 
     &__questions {
-        list-style: none;
+        list-style: inside;
 
         &__item {
             background-color: #13151d;
@@ -40,22 +40,21 @@
                 overflow: hidden;
                 padding: 0 24px;
                 transition: height, .5s ease;
-                
-
+                   
                 span {
                     font-size: 16px;
                     a {
                         color: #fff;
                     }
                 }
-
+                
                 ul {
-                    list-style-type: disc;
                     padding-left: 48px;
                 }
                 li {
-                    display: list-item;
                     padding: 4px;
+                    list-style-type: disc;
+                }
 
                     p {
                         font-size: 16px;
@@ -79,5 +78,4 @@
             }
         }
     }
-}
 }
